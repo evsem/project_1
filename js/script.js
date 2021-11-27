@@ -94,16 +94,26 @@ class InfoGroup {
 const gr_4B = new InfoGroup(4, 24)
 console.log(gr_4B)
 
+class WeatherInfo {
+  constructor(temperature, humidity, windForce) {
+    this.temperature = temperature
+    this.humidity = humidity
+    this.windForce = windForce
+  }
+}
+let weatherToday = new WeatherInfo('+23 to Cels', '56%', 'medium')
+console.log(weatherToday)
+
 //EventLoop
 const js_str = 'JS'
 setTimeout(() => {
   console.log(`Hello ${js_str}.`)
+  setTimeout(() => {
+    console.log(56 - num_1)
+  }, 4000)
 }, 2000)
 
 setTimeout((myYear = 20) => {
   let yearBirth = 2021 - myYear
   console.log(`I'm born in ${yearBirth}.`)
 }, 3000)
-
-//DOM
-const container_main = document.querySelector('.container_main')
