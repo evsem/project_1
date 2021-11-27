@@ -96,9 +96,9 @@ body {
 .container_main {
   max-width: 1220px;
   min-height: 100vh;
-  background-color: rgb(211, 192, 163);
   margin: 14px auto;
-  padding: 5px;
+  padding: 3px;
+  border: 2px solid black;
 }
 
 /*-----topStart-----*/
