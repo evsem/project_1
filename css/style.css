@@ -1,13 +1,122 @@
+/*-----zeroStyle-----*/
+/*для обнуления всех отступов web-браузера*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/*меняет подсчёт ширины блока так, чтобы нам было удобнее верстать*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/*убираем линии обводки у некоторых браузеров*/
+:focus,
+:active {
+  outline: none;
+}
+a:focus,
+a:active {
+  outline: none;
+}
+
+/*делает значения тегов блочными*/
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+/*уравнивают поведение шрифтов и элементов для разных браузеров,
+в том числе запрещают увеличение шрифта самовольно*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-family: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/*просим наследовать семейство шрифта,
+т.к по умолчанию данные теги не наследуют семейство шрифта*/
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+/*убирают некоторые особенности в разных браузерах*/
+input::-ms-clear {
+  display: none;
+}
+button {
+  cursor: pointer;
+}
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+a,
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+ul li {
+  list-style: none;
+}
+img {
+  vertical-align: top;
+}
+
+/*обнуляем все заголовки*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
 body {
   background-color: blanchedalmond;
 }
 
 .container_main {
+  max-width: 1220px;
+  min-height: 100vh;
+  background-color: rgb(211, 192, 163);
+  margin: 14px auto;
+  padding: 5px;
 }
 
 /*-----topStart-----*/
 
 .top_container {
+  max-width: 1180px;
+  min-height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.top_1,
+.top_2,
+.top_3 {
+  min-width: 388px;
+  min-height: 200px;
+  background-color: cornsilk;
 }
 
 .top_1 {
