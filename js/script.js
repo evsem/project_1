@@ -2,13 +2,28 @@
 
 //Arrow function
 let arrFun = (a, b) => {
-  return (a + b) * 5
+  console.log((a + b) * 5)
 }
+arrFun(2, 3)
 
 //Function
 function classicFin(text_user) {
-  console.log(`Hello ${text_user}`)
+  console.log(`Hello ${text_user}.`)
 }
+classicFin('web')
+
+let num_0 = 876
+const num_1 = 456
+function fun_0(num_2 = 1) {
+  if (num_0 > num_1) {
+    console.log(`${num_0}, it's first number.`)
+  } else if (`Numbers ${num_0} and ${num_1} are equal`) {
+    console.log(true)
+  } else {
+    console.log(num_1 - num_2)
+  }
+}
+fun_0(376)
 
 //Object
 const user_0 = {
@@ -22,14 +37,17 @@ const user_0 = {
   hasFamily: true,
   compositionFamily: [
     (sister = { name: 'Sally', age: 26 }),
-    (mother = { name: 'Go', age: 54, job: true }),
-    (brother = { name: 'Sally', age: 15 }),
+    (mother = { name: 'Gloria', age: 54, job: true }),
+    (brother = { name: 'Sam', age: 15 }),
   ],
 }
+console.log(user_0.adress.numberHouse.toString())
+console.log(user_0.compositionFamily[1])
 
+//Array
 const user_1 = {
-  status: 'working',
-  port: 2300,
+  statusLife: 'died',
+  yearDied: 2018,
 }
 
 const user_2 = {
@@ -42,8 +60,8 @@ const user_3 = {
   colorSholders: 'white',
 }
 
-//Array
 let allObj = [user_1, user_2, user_3]
+const numArr = [1, 0, 5, 78, 65, 456, 361, 9041, 34]
 
 const user_4 = {
   job: false,
@@ -57,32 +75,34 @@ let arr_1 = allObj.slice(0, 2)
 console.log(allObj.includes(user_3, 0))
 
 //Classes
-class Info {
+class InfoUser {
   constructor(name, age, colorSholders) {
     this.name = name
     this.age = age
     this.colorSholders = colorSholders
   }
 }
-let userInfo = new Info('Alex', 17, 'lightgrey')
-console.log(userInfo)
+let student = new InfoUser('Alex', 17, 'lightgrey')
+console.log(student)
 
-class Group {
-  constructor(course, members) {
+class InfoGroup {
+  constructor(course, group_members) {
     this.course = course
-    this.members = members
+    this.members = group_members
   }
 }
-const gr_4B = new Group(4, 24)
+const gr_4B = new InfoGroup(4, 24)
 console.log(gr_4B)
 
 //EventLoop
+const js_str = 'JS'
 setTimeout(() => {
-  console.log('Hello JS.')
+  console.log(`Hello ${js_str}.`)
 }, 2000)
 
-setTimeout((a = 5, b = 67) => {
-  console.log(b - a)
+setTimeout((myYear = 20) => {
+  let yearBirth = 2021 - myYear
+  console.log(`I'm born in ${yearBirth}.`)
 }, 3000)
 
 //DOM
