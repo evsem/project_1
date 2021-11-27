@@ -57,3 +57,33 @@ let arr_1 = allObj.slice(0, 2)
 console.log(allObj.includes(user_3, 0))
 
 //Classes
+class Info {
+  constructor(name, age, colorSholders) {
+    this.name = name
+    this.age = age
+    this.colorSholders = colorSholders
+  }
+}
+let userInfo = new Info('Alex', 17, 'lightgrey')
+console.log(userInfo)
+
+class Group {
+  constructor(course, members) {
+    this.course = course
+    this.members = members
+  }
+}
+const gr_4B = new Group(4, 24)
+console.log(gr_4B)
+
+//EventLoop
+setTimeout(() => {
+  console.log('Hello JS.')
+}, 2000)
+
+setTimeout((a = 5, b = 67) => {
+  console.log(b - a)
+}, 3000)
+
+//DOM
+const container_main = document.querySelector('.container_main')
