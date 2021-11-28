@@ -1,4 +1,5 @@
-/*-----zeroStyle-----*/
+/*-----zeroStyleStart-----*/
+
 /*для обнуления всех отступов web-браузера*/
 * {
   padding: 0;
@@ -88,6 +89,8 @@ h6 {
   font-size: inherit;
   font-weight: 400;
 }
+
+/*-----zeroStyleEnd-----*/
 
 body {
   background-color: rgb(238, 238, 238);
@@ -189,16 +192,6 @@ body {
 
 .right_block_2_bottom {
   margin-top: 18px;
-}
-
-#text_center_1,
-#text_center_2 {
-  font-size: 24px;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  letter-spacing: 5px;
 }
 
 /*-----centerEnd-----*/
