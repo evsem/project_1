@@ -122,7 +122,6 @@ body {
   min-width: 388px;
   min-height: 200px;
   background-color: rgb(196, 231, 231);
-  border: 4px solid rgb(153, 201, 201);
   border-radius: 4px;
 }
 
@@ -134,12 +133,14 @@ body {
 
 .top_2 {
   transition: all 0.2s linear;
+  border: 4px solid rgb(153, 201, 201);
 }
 .top_2:hover {
   opacity: 0;
 }
 
 .top_3 {
+  background: url(../img/girl_1.jpg) -30px -220px /420px 420px no-repeat;
   box-shadow: 8px 5px 3px lightgray;
 }
 
@@ -156,8 +157,7 @@ body {
 
 .center_left {
   min-width: 388px;
-  background-color: rgb(224, 201, 231);
-  border: 4px solid rgb(189, 155, 199);
+  background: url(../img/girl_2.jpg) -120px -102px / 580px 580px no-repeat;
 }
 
 .center_right {
@@ -224,6 +224,11 @@ body {
   background-color: rgb(185, 155, 98);
   border: 5px solid rgb(146, 120, 71);
   border-radius: 4px;
+}
+
+.bottom_b_left {
+  background: url(../img/sad_5.jpg) 0px -80px / cover no-repeat;
+  border: 3px solid rgb(209, 202, 202);
 }
 
 /*-----bottomEnd-----*/
