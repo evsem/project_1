@@ -117,3 +117,29 @@ setTimeout((myYear = 20) => {
   let yearBirth = 2021 - myYear
   console.log(`I'm born in ${yearBirth}.`)
 }, 3000)
+
+//Promise
+const newRrom = new Promise((res, rej) => {
+  setTimeout(() => {
+    console.log('Start of the work process...')
+    let ob = {
+      name: 'Alex',
+      age: 22,
+      job: false,
+      hasFamily: false,
+      townLife: 'Oslo',
+      hasHouse: true,
+    }
+    console.log(`Name: ${ob.name}; age: ${ob.age}.`)
+    res(ob)
+  }, 3000)
+})
+newRrom
+  .then((clientOb) => {
+    setTimeout(() => {
+      console.log(`Does Alex rato: ${clientOb.job}`)
+    }, 2000)
+  })
+  .catch((err) => {
+    console.error(`Error: ${err}`)
+  })
