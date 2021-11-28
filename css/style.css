@@ -91,6 +91,7 @@ h6 {
 
 body {
   background-color: rgb(238, 238, 238);
+  min-width: 1200px;
 }
 
 .container_main {
@@ -98,7 +99,6 @@ body {
   min-height: 100vh;
   margin: 14px auto;
   padding: 3px;
-  border: 1px solid black;
 }
 
 .top_container,
@@ -174,9 +174,7 @@ body {
 
 .right_block_1 {
   background-color: rgb(163, 106, 114);
-}
-
-.right_block_2 {
+  border-radius: 4px;
 }
 
 .right_block_2_top,
@@ -184,7 +182,8 @@ body {
   min-width: auto;
   min-height: 45%;
   background-color: rgb(179, 116, 116);
-  border: 3px solid rgb(150, 85, 85);
+  border: 4px solid rgb(150, 85, 85);
+  border-radius: 4px;
   padding: 6px;
 }
 
@@ -206,19 +205,32 @@ body {
 
 /*-----bottomStart-----*/
 
-.bottom_container {
+.bottom_t,
+.bottom_b {
+  min-width: 388px;
+  min-height: 422px;
+  margin-top: 20px;
 }
 
 .bottom_t {
+  background-color: rgb(224, 195, 141);
+  border: 4px solid rgb(184, 160, 117);
+  border-radius: 4px;
 }
 
 .bottom_b {
+  min-width: 742px;
+  display: flex;
+  justify-content: space-around;
 }
 
-.bottom_b_left {
-}
-
+.bottom_b_left,
 .bottom_b_right {
+  min-width: 320px;
+  min-height: auto;
+  background-color: rgb(185, 155, 98);
+  border: 5px solid rgb(146, 120, 71);
+  border-radius: 4px;
 }
 
 /*-----bottomEnd-----*/
